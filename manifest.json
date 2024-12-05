@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Any-Downloader",
+  "version": "1.0",
+  "action": {
+      "default_popup": "popup.html",
+      "default_title": "Any-Downloader"
+  },
+  "permissions": ["activeTab"]
+}

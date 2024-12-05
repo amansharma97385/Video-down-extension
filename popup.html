@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Any-Downloader</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+            background: #fff;
+        }
+        .container {
+            padding: 20px;
+            width: 300px;
+        }
+        input, select, button {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Any-Downloader</h1>
+        <form id="download-form">
+            <input type="text" id="url" name="url" placeholder="Paste URL here" required>
+            <select id="type" name="type">
+                <option value="video">Video</option>
+                <option value="audio">Audio (MP3)</option>
+            </select>
+            <select id="quality" name="quality">
+                <option value="best">Best Available</option>
+                <option value="137+bestaudio">1080p</option>
+                <option value="136+bestaudio">720p</option>
+                <option value="135+bestaudio">480p</option>
+                <option value="134+bestaudio">360p</option>
+            </select>
+            <button type="submit">Download</button>
+        </form>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
